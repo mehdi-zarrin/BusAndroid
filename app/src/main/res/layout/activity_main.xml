@@ -1,17 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.mehdi.busandroid.MainActivity">
+    tools:context="com.example.mehdi.busandroid.MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:text="Hello World!"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</RelativeLayout>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.example.mehdi.busandroid.ButtonFragment"
+        tools:layout="@layout/fragment_button"
+        android:layout_marginBottom="18dp"
+        android:id="@+id/first"/>
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.example.mehdi.busandroid.GetterFragment"
+        tools:layout="@layout/fragment_getter"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/second"/>
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.example.mehdi.busandroid.GetterFragment"
+        tools:layout="@layout/fragment_getter"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/third"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.example.mehdi.busandroid.GetterFragment"
+        tools:layout="@layout/fragment_getter"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/four"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.example.mehdi.busandroid.GetterFragment"
+        tools:layout="@layout/fragment_getter"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/five"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.example.mehdi.busandroid.GetterFragment"
+        tools:layout="@layout/fragment_getter"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/six"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.example.mehdi.busandroid.GetterFragment"
+        tools:layout="@layout/fragment_getter"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/seven"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.example.mehdi.busandroid.GetterFragment"
+        tools:layout="@layout/fragment_getter"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/eight"/>
+
+
+
+</LinearLayout>
